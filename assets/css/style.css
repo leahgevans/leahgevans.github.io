@@ -220,6 +220,14 @@ body.nav-active { overflow: hidden; }
 
 .section-title { margin-block-end: 16px; }
 
+.project-card-title{
+  position:absolute;
+  margin-block-end: 16px;
+  font-size: var(--fs-8);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+}
+
 .grid-list {
   display: grid;
   gap: 30px;
@@ -482,7 +490,7 @@ body.nav-active { overflow: hidden; }
 .project-card-2,
 :is(.project-card-3, .project-card-4) .card-content { padding: var(--padding); }
 
-.project-card-1 { padding-block-end: 0; }
+.project-card-1 { padding-block-end: 0;}
 
 .project :is(.project-card-3, .project-card-4) { gap: 0; }
 
@@ -492,7 +500,7 @@ body.nav-active { overflow: hidden; }
   text-transform: uppercase;
 }
 
-.project-card .card-title { margin-block: 16px; }
+.project-card .card-title { margin-block-start: 50px; margin-block-end: 16px;}
 
 .project-card .card-text { margin-block-end: 20px; }
 
@@ -507,12 +515,16 @@ body.nav-active { overflow: hidden; }
 .project-card .btn-text:is(:hover, :focus-visible) { gap: 10px; }
 
 
+/*-----------------------------------*\
+  #RESUME
+\*-----------------------------------*/
 
-
+.resume .section-text { margin-block: 24px 36px; }
 
 /*-----------------------------------*\
   #CONTACT
 \*-----------------------------------*/
+.contact { border-block: 1px solid var(--cadet-blue-crayola_a20); }
 
 .contact { padding-block-end: 0; }
 
@@ -787,7 +799,7 @@ textarea.input-field {
     align-items: center;
   }
 
-  .about .grid-list { grid-template-columns: repeat(4, 1fr); }
+  .about .grid-list { grid-template-columns: repeat(2, 1fr); }
 
 
 
@@ -812,10 +824,13 @@ textarea.input-field {
 
   :is(.project-card-1, .project-card-2) .card-banner { width: 66.66%; }
 
-  .project-card-1 .card-content { padding-block-end: var(--padding); }
+  .project-card-1 .card-content { padding-block-end: var(--padding);}
 
   .project-card-2 .card-content { order: 1; }
 
+  .student-color {
+    color: #3f78e0;
+  }
 
 
   /**
