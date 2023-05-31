@@ -24,7 +24,8 @@
   --white_a8: hsla(0, 0%, 100%, 0.08);
   --white_a12: hsla(0, 0%, 100%, 0.12);
   --cultured: hsla(220, 20%, 97%, 1);
-  --snow: hsla(345, 57%, 97%, 1);
+  --snow: rgb(252, 247, 243);
+  --light-grey: rgb(238, 238, 238);
   --manatee: hsla(219, 10%, 62%, 1);
   --black-coral: hsla(220, 12%, 43%, 1);
   --cadet-blue-crayola_a20: hsla(222, 23%, 71%, 0.2);
@@ -218,7 +219,7 @@ body.nav-active { overflow: hidden; }
 
 .section-text { font-size: var(--fs-5); }
 
-.section-title { margin-block-end: 16px; }
+.section-title { margin-block-end: 16px; margin-block-start: 16px; }
 
 .project-card-title{
   position:absolute;
@@ -427,8 +428,6 @@ body.nav-active { overflow: hidden; }
 
 .about .wrapper {
   gap: 50px;
-  margin-block-end: 70px;
-  
 }
 
 .progress-list .label-wrapper {
@@ -459,7 +458,11 @@ body.nav-active { overflow: hidden; }
 
 .about-card .card-title { margin-block: 16px 10px; }
 
-
+.about-txt{
+  display: flex;
+  padding: 50px;
+  border-radius: var(--radius-8);
+}
 
 
 
@@ -528,7 +531,7 @@ body.nav-active { overflow: hidden; }
 .contact { padding-block-end: 0; }
 
 .contact-card {
-  background-color: var(--snow);
+  background-color: var(--light-grey);
   padding: 32px;
   border-radius: var(--radius-8);
   display: grid;
@@ -705,7 +708,7 @@ textarea.input-field {
      * spacing
      */
 
-    --section-padding: 120px;
+    --section-padding: 110px;
 
   }
 
@@ -819,7 +822,7 @@ textarea.input-field {
     align-items: top;
   }
 
-  :is(.project-card-1, .project-card-2) .card-content { width: 50%; }
+  :is(.project-card-1, .project-card-2) .card-content { width: 100%; }
 
   :is(.project-card-1, .project-card-2) .card-banner { width: 66.66%; }
 
@@ -828,7 +831,11 @@ textarea.input-field {
   .project-card-2 .card-content { order: 1; }
 
   .student-color {
-    color: #3f78e0;
+    color: #7cb798;
+  }
+
+  .internship-color{
+    color: #3f9de0;
   }
 
 
