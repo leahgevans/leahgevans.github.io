@@ -426,7 +426,6 @@ body.nav-active { overflow: hidden; }
 \*-----------------------------------*/
 
 .about .wrapper {
-  display: grid;
   gap: 50px;
   margin-block-end: 70px;
   
