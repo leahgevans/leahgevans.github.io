@@ -534,6 +534,7 @@ body.nav-active { overflow: hidden; }
   background-color: var(--light-grey);
   padding: 32px;
   border-radius: var(--radius-8);
+  border: 2px solid #0f0e10;
   display: grid;
   gap: 40px;
 }
