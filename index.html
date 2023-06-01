@@ -567,7 +567,9 @@
 
             </div>
 
-            <form action="./form-data.php" method = "post" class="contact-form" data-reveal="right">
+            <div id="form-messages"></div>
+
+            <form id="ajax-contact" action="./form-data.php" method = "post" class="contact-form" data-reveal="right">
 
               <div class="input-wrapper">
                 <input type="text" name="name" placeholder="Name *" required class="input-field">
@@ -648,6 +650,7 @@
   <!-- 
     - custom js link
   -->
+  <script src="jquery-2.1.0.min.js"></script>
   <script src="./assets/js/script.js"></script>
 
   <!-- 
